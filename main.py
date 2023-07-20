@@ -138,29 +138,29 @@ solve()
 
 # Sensitivity Analysis on Worker Constraints
 
-max_worker_in_each_period = [40000, 350]
+max_worker_in_each_period = [40000, 300]
 solve(max_workers=max_worker_in_each_period)
 
 max_worker_in_each_period = [40000, 0]
 solve(max_workers=max_worker_in_each_period)
 
-max_worker_in_each_period = [4000, 35000]
+max_worker_in_each_period = [4000, 30000]
 solve(max_workers=max_worker_in_each_period)
 
 
 # Sensitivity Analysis on Machine Constraints
 
 
-max_time_for_each_machine_in_each_period = [100000, 20000, 20000, 10000]
+max_time_for_each_machine_in_each_period = [90000, 25000, 31000, 11000]
 solve(max_times_for_machines=max_time_for_each_machine_in_each_period)
 
-max_time_for_each_machine_in_each_period = [10000, 20000, 20000, 10000]
+max_time_for_each_machine_in_each_period = [50000, 25000, 31000, 11000]
 solve(max_times_for_machines=max_time_for_each_machine_in_each_period)
 
-max_time_for_each_machine_in_each_period = [1000, 3000, 20000, 10000]
+max_time_for_each_machine_in_each_period = [1000, 3500, 30000, 12000]
 solve(max_times_for_machines=max_time_for_each_machine_in_each_period)
 
-max_time_for_each_machine_in_each_period = [1000, 2000, 20000, 10000]
+max_time_for_each_machine_in_each_period = [1000, 2500, 30000, 12000]
 solve(max_times_for_machines=max_time_for_each_machine_in_each_period)
 
 max_time_for_each_machine_in_each_period = [10000, 2000, 200, 100]
